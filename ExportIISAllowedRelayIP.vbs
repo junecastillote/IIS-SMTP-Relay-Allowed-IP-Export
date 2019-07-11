@@ -2,11 +2,11 @@
 ' Output file for report
 fileOutput = "Allow_RelayIP.txt"
 ' The Vitual SMTP Server ID
-vistualSMTPServer = "IIS://localhost/smtpsvc/1"
+virtualSMTPServer = "IIS://localhost/smtpsvc/1"
 Set fso = CreateObject("Scripting.FileSystemObject")
 Set allowFile = fso.opentextfile(fileOutput,2,true)
  
-Set objSMTP = GetObject(vistualSMTPServer)
+Set objSMTP = GetObject(virtualSMTPServer)
 Set objRelayIpList = objSMTP.Get("RelayIpList")
 objCurrentList = objRelayIpList.IPGrant
 
