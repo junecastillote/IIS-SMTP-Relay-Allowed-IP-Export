@@ -14,7 +14,7 @@ i = 0
 For Each objIP in objCurrentList
 	arrayFields = Split(objIP, ", ")
     allowFile.WriteLine arrayFields(0)
-	Wscript.Echo arrayFields(0)
+	'Wscript.Echo arrayFields(0)
     i = i + 1
 Next
 Wscript.Echo "Saved in " & fileOutput
